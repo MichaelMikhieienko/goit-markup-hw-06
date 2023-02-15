@@ -476,19 +476,38 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
 background: var(--color-navy-blue);
 gap: 24px;
-
 display: flex;
 align-items: center;
 letter-spacing: 0.04em;
-
-color: rgba(255, 255, 255, 0.6);
+padding-left: 16px;
+transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.footer-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);;
+}
+.footer-input:hover::placeholder,
+.footer-input:focus::placeholder,
+.footer-input:active::placeholder{
+  color: var(--color-iris);
+}
+
+.footer-input:hover,
+.footer-input:focus,
+.footer-input:active{
+  border-color: var(--color-iris);
+
+}
+
+
 .footer-form{
   display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-max-width: auto ;
+
 
   
 }
@@ -499,8 +518,8 @@ justify-content: center;
 align-items: center;
   padding: 8px 24px 8px 24px;
   gap: 16px;
-  width: 165px;
-  height: 40px;
+  width: auto;
+  height: auto;
 font-weight: 500;
 font-size: 16px;
 line-height: calc(24/16);
@@ -509,14 +528,20 @@ background: var(--color-iris);
 color: var(--color-white);
 margin-left: 24px;
 border: 1px solid var(--color-iris);
+cursor: pointer;
+transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.footer-button-subscribe:hover,
+.footer-button-subscribe:focus,
+.footer-button-subscribe:active{
+background-color: var(--color-ocean);
 }
 .footer-telega{
-  
-  fill: var(--color-white);
- 
-  
-}
+    fill: var(--color-white);
+ }
 
 .hero {
   background-color: var(--color-navy-blue);
@@ -746,4 +771,17 @@ Modal window
 .modal-btn:active{
   fill: var(--color-white);
   background-color: var(--color-ocean);
+}
+
+.modal-form{
+  position: absolute;
+  top: calc(50% - 288px);
+  left: calc(50% - 202px);
+  
+  width: 408px;
+  min-height: 576px;
+  background-color: var(--color-modal);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
