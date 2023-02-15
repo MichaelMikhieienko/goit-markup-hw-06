@@ -461,22 +461,21 @@ p {
 }
 
 .footer-label{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 264px;
-  height: 40px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
+  
+  
 }
 .footer-input{
   font-style: normal;
 font-weight: 400;
 font-size: 12px;
 line-height: calc(24/12);
-
+width: 264px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background: var(--color-navy-blue);
+gap: 24px;
 
 display: flex;
 align-items: center;
@@ -489,12 +488,17 @@ color: rgba(255, 255, 255, 0.6);
 flex-direction: row;
 justify-content: center;
 align-items: center;
+max-width: auto ;
+
+  
 }
 .footer-button-subscribe{
   display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
+  padding: 8px 24px 8px 24px;
+  gap: 16px;
   width: 165px;
   height: 40px;
 font-weight: 500;
@@ -505,10 +509,10 @@ background: var(--color-iris);
 color: var(--color-white);
 margin-left: 24px;
 border: 1px solid var(--color-iris);
-padding: 0;
 
 }
 .footer-telega{
+  
   fill: var(--color-white);
  
   
