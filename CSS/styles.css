@@ -393,7 +393,9 @@ p {
 .footer-logo-s {
   color: var(--color-cloud);
 }
-
+.footer-right{
+  margin-left: 120px;
+}
 .footer-soc-media-text {
   color: var(--color-cornflower);
   margin-bottom: 16px;
@@ -404,7 +406,7 @@ p {
 
 .footer-container {
   display: flex;
-  gap: 120px;
+  
   align-items: baseline;
 }
 
@@ -441,6 +443,75 @@ p {
 .social-media-link:focus,
 .social-media-link:active {
   background-color: var(--color-green);
+}
+
+
+
+
+.footer-email{
+  margin-left: 80px;
+
+}
+.footer-subscribe{
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--color-white);
+
+}
+
+.footer-label{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+}
+.footer-input{
+  font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: calc(24/12);
+
+
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: rgba(255, 255, 255, 0.6);
+}
+.footer-form{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+.footer-button-subscribe{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+  width: 165px;
+  height: 40px;
+font-weight: 500;
+font-size: 16px;
+line-height: calc(24/16);
+border-radius: 4px;
+background: var(--color-iris);
+color: var(--color-white);
+margin-left: 24px;
+border: 1px solid var(--color-iris);
+padding: 0;
+
+}
+.footer-telega{
+  fill: var(--color-white);
+ 
+  
 }
 
 .hero {
