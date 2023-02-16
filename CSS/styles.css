@@ -379,6 +379,7 @@ p {
   background-color: var(--color-navy-blue);
   padding-top: 100px;
   padding-bottom: 100px;
+  
 }
 .footer-logo {
   font-family: 'Raleway';
@@ -406,8 +407,8 @@ p {
 
 .footer-container {
   display: flex;
-  
   align-items: baseline;
+  justify-content: center;
 }
 
 .footer-desk {
@@ -418,6 +419,7 @@ p {
   color: var(--color-cornflower);
   margin-top: 16px;
   margin-bottom: 0;
+  
 }
 
 .social-media {
@@ -774,14 +776,22 @@ Modal window
 }
 
 .modal-form{
+  display: block;
+  
+  padding: 72px 24px 0px 24px;;
   position: absolute;
   top: calc(50% - 288px);
   left: calc(50% - 202px);
-  
-  width: 408px;
-  min-height: 576px;
+  width: 360px;
+  height: 432px;
   background-color: var(--color-modal);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+ 
+}
+.modal-form-group{
+  padding-bottom: 26px;
+  width: 360px;
+  height: 40px;
+}
+.modal-form-label{
+  padding-bottom: 4px;
 }
