@@ -724,7 +724,7 @@ Modal window
   transition: opacity 700ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdpop.is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
