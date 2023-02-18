@@ -395,7 +395,7 @@ p {
   color: var(--color-cloud);
 }
 .footer-right{
-  margin-left: 120px;
+  margin-right: 80px;
 }
 .footer-soc-media-text {
   color: var(--color-cornflower);
@@ -409,6 +409,10 @@ p {
   display: flex;
   align-items: baseline;
   justify-content: center;
+}
+.footer-left{
+  width: 264px;
+  margin-right: 120px;
 }
 
 .footer-desk {
@@ -426,7 +430,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
 }
 .social-media-link {
   display: flex;
@@ -451,7 +455,7 @@ p {
 
 
 .footer-email{
-  margin-left: 80px;
+ 
 
 }
 .footer-subscribe{
@@ -482,6 +486,7 @@ display: flex;
 align-items: center;
 letter-spacing: 0.04em;
 padding-left: 16px;
+margin-right: 24px;
 transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -528,7 +533,7 @@ line-height: calc(24/16);
 border-radius: 4px;
 background: var(--color-iris);
 color: var(--color-white);
-margin-left: 24px;
+
 border: 1px solid var(--color-iris);
 cursor: pointer;
 transition-property: background-color;
