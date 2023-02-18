@@ -556,8 +556,8 @@
       <div class="modal-form">
         <strong class="modal-form-strong">Leave your contacts and we will call you back</strong>
         <form class="modal-form-contacts" name="signup_form"
-        autocomplete="on"
-        novalidate> 
+          autocomplete="on"
+          novalidate> 
           <label class="modal-form-label" for="user_name">Name</label>
             <div class="modal-form-group">
               <input class="modal-form-field" type="text" name="user_name" id="user_name"/>
@@ -588,9 +588,11 @@
             <label class="modal-form-egreement">
                        
         <input class="modal-form-checkbox" type="checkbox" name="user_egreement"/>
-        <svg class="modal-form-checkbox-icon" width="10" height="8">
-          <use href="./images/icons.svg#icon-Vector"></use>
-          </svg>
+        <svg class="modal-form-checkbox-custome" width="16" height="16">
+          <use class="checkbox-icon-default" href="./images/icons.svg#icon-checkbox"></use>
+          <use class="checkbox-icon-click" href="./images/icons.svg#icon-click"></use>
+          </svg>      
+          
         <span class="modal-form-disc">I accept the terms and conditions of the <a class="modal-form-link" href="#" target="_blank">Privacy Policy</a>
         </span>
     
