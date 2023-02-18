@@ -492,14 +492,7 @@ transition-property: border-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-input::placeholder {
-  color: rgba(255, 255, 255, 0.6);;
-}
-.footer-input:hover::placeholder,
-.footer-input:focus::placeholder,
-.footer-input:active::placeholder{
-  color: var(--color-iris);
-}
+
 
 .footer-input:hover,
 .footer-input:focus,
@@ -781,83 +774,129 @@ Modal window
 }
 
 .modal-form{
-  
-  
-  padding: 72px 24px 0px 24px;
   position: absolute;
-  top: calc(50% - 288px);
-  left: calc(50% - 202px);
-  
+  top: 50%;
+  left: 50%;
+  width: 408px;  
+  transform: translate(-50%, -50%);
+  padding: 72px 24px 24px 24px;
+    
   }
-  .modal-form-strong{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 500;
 
+  .modal-form-strong{
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 14px;
     color: var(--color-grey);
   }
- .modal-form-contacts{
-  width: 360px;
- }
-.modal-form-group{
-  width: 360px;
-  height: 40px;
-}
+  .modal-form-label{
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14/12);
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+    color: var(--color-light-slate);
+    }
+    .modal-form-group{
+      position: relative;
+      margin-bottom: 8px;
+    }
+  
+ 
 .modal-form-field{
-  position: absolute;
-  width: 360px;
+  display: block;
+  width: 100%;
   height: 40px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
-  
-  letter-spacing: 0.01em;
-  color: var(--color-light-slate);
+padding-left: 38px;
+padding-right: 38px;
+transition-property:  outline-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-form-field:focus,
+  .modal-form-field:focus-visible,
+  .modal-form-field:hover{
+    outline-color: var(--color-iris);
+    }
 .modal-form-icon{
-  fill: var(--color-grey);
   position: absolute;
-  left: calc(50% - 164.5px);
-  
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  fill: var(--color-grey);
+  transition-property:  fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
 }
-.modal-form-label{
-font-weight: 400;
-font-size: 12px;
-line-height: calc(14/12);
-letter-spacing: 0.01em;
-color: var(--color-light-slate);
-}
+  .modal-form-field:focus + .modal-form-icon{
+    fill: var(--color-iris);
+  }
+
 .modal-form-comment{
-  padding: 0;
+  display: block;
+  padding: 8px 16px;
   margin: 0%;
-  width: 360px;
+  width: 100%;
   height: 120px;
+  resize: none;
+font-size: 12px;
+line-height: calc(16/12);
+letter-spacing: 0.04em;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
+margin-bottom: 16px;
+transition-property:  outline-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-form-comment:focus,
+  .modal-form-comment:focus-visible,
+  .modal-form-comment:hover{
+    outline-color: var(--color-iris);
+    
+  }
+  .modal-form-comment::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
 .modal-form-egreement{
-  margin: 0;
-  display: flex;
+ display: flex;
   align-items: center;
-  justify-content: center;
+  margin-bottom: 24px;
+  gap: 8px;
 }
-.modal-form-checkbox{
-  margin-top: 16px;
-  
-}
-.modal-form-disc{
-  margin-top: 16px;
-  margin-left: 24px;
+.modal-form-checkbox{ 
+  appearance: none;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1.25px solid var(--color-navy-blue);
+border-radius: 2px; 
 
+
+background-color: var
+
+}
+.modal-form-checkbox:checked{
+  background-color: var(--color-ocean);
+  border-color: var(--color-ocean);
+  }
+  .modal-form-checkbox-icon{
+    fill: var(--color-white)
+  }
+.modal-form-disc{
 font-weight: 400;
 font-size: 12px;
 line-height: calc(16/12);
-
-/* identical to box height, or 133% */
-
 letter-spacing: 0.04em;
-
 color: #757575;
+}
+.modal-form-link{
+  color: var(--color-iris);
 }
 .modal-form-button{
   width: 169px;
@@ -875,6 +914,4 @@ background: var(--color-iris);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 margin: auto;
-margin-top: 24px;
-
 }
