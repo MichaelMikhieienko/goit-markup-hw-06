@@ -689,7 +689,7 @@ p {
 Modal window
 */
 
-.backdpop {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -706,6 +706,7 @@ Modal window
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transition-delay: 150ms;
 }
 
 .modal {
@@ -776,6 +777,7 @@ Modal window
   border-radius: 4px;
   padding-left: 38px;
   padding-right: 38px;
+  font-family: inherit;
   transition-property: outline-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
